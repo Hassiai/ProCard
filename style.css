@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    font-family: 'Montserrat';
+    font-size: 0.875rem;
+}
+
+.container {
+
+    width: 70vw;
+    height: 85vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.cl_img {
+    height: 35%;
+    background: url(imobile.jpg) no-repeat;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.cl_txt {
+    padding: 1.5em;
+    background: hsl(0, 0%, 100%);
+    height: 65%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.intro {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+strong {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.cl_txt h1 {
+    font-family: 'Fraunces';
+    line-height: 1;
+}
+
+.btn {
+    text-decoration: none;
+    background: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 0.5em 5.5em;
+    display: inline-block;
+    margin: 1em 0;
+    border-radius: 0.5em;
+}
+
+.cl_img+.cl_txt {
+    margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 40vw;
+        height: 60vh;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .cl_img {
+        background: url(imdesktop.jpg) no-repeat;
+        width: 50%;
+        height: 100%;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 0;
+
+    }
+
+    .cl_txt {
+        width: 52%;
+        height: 100%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+
+    }
+
+
+
+    .btn {
+        padding: 1em 4.53em;
+    }
+
+
+}
