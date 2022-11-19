@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    font-family: 'Montserrat';
+    font-size: 0.875rem;
+}
+
+.container {
+
+    width: 21rem;
+
+}
+
+.cl_img {
+
+    height: 14.7rem;
+    background: url(imobile.jpg) no-repeat;
+    background-size: contain;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.cl_txt {
+    padding: 1.5em;
+    background: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+p {
+    color: hsl(225, 6%, 58%);
+}
+
+.intro {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+strong {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.cl_txt h1 {
+    font-family: 'Fraunces';
+    line-height: 1;
+}
+
+
+.btn {
+    text-decoration: none;
+    background: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 1em 5.5em;
+    display: inline-block;
+    margin: 1em 0;
+    border-radius: 0.5em;
+}
+
+
+@media (min-width: 600px) {
+    .container {
+        width: 33.7rem;
+
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .cl_img {
+        background: url(imdesktop.jpg) no-repeat;
+        background-size: contain;
+        width: 50%;
+        height: auto;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 0;
+
+    }
+
+    .cl_txt {
+        width: 50%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+
+    }
+
+    .btn {
+        padding: 1em 3.5em;
+    }
+
+
+
+
+}
